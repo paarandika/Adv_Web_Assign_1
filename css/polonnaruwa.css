@@ -1,0 +1,54 @@
+/* jssor slider bullet navigator skin 21 css */
+            /*
+            .slider div           (normal)
+            .slider div:hover     (normal mouseover)
+            .slider .av           (active)
+            .slider .av:hover     (active mouseover)
+            .slider .dn           (mousedown)
+            */
+            .slider {
+                position: absolute;
+            }
+            .slider div, .slider div:hover, .slider .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                line-height: 19px;
+                color: white;
+                font-size: 12px;
+                background: url(../img/b21.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .slider div { background-position: -5px -5px; }
+            .slider div:hover, .slider .av:hover { background-position: -35px -5px; }
+            .slider .av { background-position: -65px -5px; }
+            .slider .dn, .slider .dn:hover { background-position: -95px -5px; }
+        
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .LArrow                  (normal)
+            .RArrow                  (normal)
+            .LArrow:hover            (normal mouseover)
+            .RArrow:hover            (normal mouseover)
+            .LArrow.LArrowdn      (mousedown)
+            .RArrow.RArrowdn      (mousedown)
+            */
+            .LArrow, .RArrow {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url( ../img/a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .LArrow { background-position: -3px -33px; }
+            .RArrow { background-position: -63px -33px; }
+            .LArrow:hover { background-position: -123px -33px; }
+            .RArrow:hover { background-position: -183px -33px; }
+            .LArrow.LArrowdn { background-position: -243px -33px; }
+            .RArrow.RArrowdn { background-position: -303px -33px; }

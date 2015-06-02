@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polonnaruwa</title>
+	<link rel="stylesheet" type="text/css" href="css/polonnaruwa.css">
+</head>
+<body style="padding:0px; margin:0px; font-family:Arial, Verdana;background-color:#fff;">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+	<script type="text/javascript" src="js/polonnaruwa.js"></script> 
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 500px; overflow: hidden;">
+            <div>
+                <img u="image" src="img/watadageya.jpg" />
+				<video width="480" controls style="position: absolute; top: 200px; right: 20px; z-index:1;">
+					<source src="vid/nissanka_latha.mp4" type="video/mp4">
+					<source src="mov_bbb.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+            </div>
+			<div>
+                <img u="image" src="img/gal_vihara.jpg" />
+            </div>
+            <div>
+                <img u="image" src="img/nissanka_latha.jpg" />
+				<video width="480" controls style="position: absolute; top: 40px; left: 20px; z-index:1;">
+					<source src="vid/nissanka_latha.mp4" type="video/mp4">
+					<source src="mov_bbb.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+            </div>
+			 <div>
+                <img u="image" src="img/elephants.jpg" />
+            </div>
+        </div>
+		
+		<div class="control">
+        <div u="navigator" class="slider" id="bullet_nav" style="bottom: 26px; right: 6px;">
+            <div u="prototype"></div>
+        </div>
+		</div>
+		
+        <div class="control" style="position: absolute; top: 240px; left: 8px;">
+        <span u="arrowleft" class="LArrow" style="top: 123px; left: 8px;">
+        </span>
+        </div>
+		
+        <div class="control" style="position: absolute; top: 240px; right: 8px;">
+        <span u="arrowright" class="RArrow" style="top: 123px; right: 8px;">
+        </span>
+		</div>
+    </div>
+</body>
+</html>
