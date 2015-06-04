@@ -38,6 +38,7 @@
      font-family: 'verdana';
      font-size: 12vw;
      width: 100%;
+     color: #0b0b6d;
 
 }
 
@@ -62,16 +63,17 @@ nav a {
     padding: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #000047;
+    border-color: #595966;
     border-radius: 5px;
     text-decoration: none;
     font-family: 'verdana';
     vertical-align:middle; 
+    text-indent: 10px;
+    color: #0b0b6d;
 }
 
 a:hover {
     border-width: 3px;
-    border-color: #000000;
 
 }
 
@@ -100,11 +102,24 @@ nav a#pull {
 @media screen and (max-width: 510px) {
     nav a#pull {
         display: block;
+        padding: 0px;
+        color: #0b0b6d;
+    }
+    nav div {
         border-width: 2px;
         border-style: solid;
-        border-color: #000047;
+        border-color: #595966;
         border-radius: 5px;
-        padding: 3px;
+        height: auto;
+        width: 100%;
+    }
+
+    nav div#menu{
+        border:none;
+        margin-bottom: 5px;
+        padding: 4px 5px;
+        width: auto;
+
     }
 
     nav a#pull:after {
@@ -114,7 +129,7 @@ nav a#pull {
         height: 30px;
         display: inline-block;
         position: relative;
-        left: 80%;
+        left: 75%;
         top: 10px;
     }
 
@@ -133,16 +148,23 @@ nav a#pull {
         width: 100%;
         border-width: 2px;
         border-style: solid;
-        border-color: #000047;
+        border-color: #595966;
         border-radius: 5px;
+        margin-bottom: 2px;
+        padding: 4px 0px;
+        float: none;
     }
 
     nav a {
+        padding: 10px 0 10px 0;
         border: none;
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
     }
 
     .right{
         float: none;
-        padding: 0px;
+        padding: 4px 0px;
     }
 }        

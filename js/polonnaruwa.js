@@ -8,9 +8,12 @@ $(function() {
         menu.slideToggle();
     });
 
-    $('nav ul li').on('click', function(e) {
-        e.preventDefault();
+    $('nav ul a').on('click', function(e) {
+    	var w = $(window).width();
+    	if(w < 510) {
+    	e.preventDefault();
         menu.slideToggle();
+    	}
     });
 });
 
