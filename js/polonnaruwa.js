@@ -10,7 +10,7 @@ $(function() {
 
     $('nav ul a').on('click', function(e) {
     	var w = $(window).width();
-    	if(w < 510) {
+    	if(w < 480) {
     	e.preventDefault();
         menu.slideToggle();
     	}
@@ -21,10 +21,10 @@ $(function() {
 $(window).resize(function(){
 	$(".right").css({'float':'none'})
     var w = $(window).width();
-    if(w > 510 && menu.is(':hidden')) {
+    if(w > 480 && menu.is(':hidden')) {
         menu.removeAttr('style');
     }
-    if(w > 510) {
+    if(w > 749) {
     	$(".right").css({'float':'right'})
     }
 }); 

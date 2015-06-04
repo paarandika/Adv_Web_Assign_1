@@ -98,8 +98,25 @@ nav a#pull {
     *zoom: 1;
 }
 
+#container {
+    margin: auto;
+    width: 100%;
+}
 
-@media screen and (max-width: 510px) {
+aside {
+    float: left;
+    width: 20%;
+    background-color: blue;
+}
+
+#content {
+    float: left;
+    width: 80%;
+    background-color: red;
+}
+
+
+@media screen and (max-width: 480px) {
     nav a#pull {
         display: block;
         padding: 0px;
@@ -129,7 +146,7 @@ nav a#pull {
         height: 30px;
         display: inline-block;
         position: relative;
-        left: 75%;
+        left: 73%;
         top: 10px;
     }
 
@@ -167,4 +184,40 @@ nav a#pull {
         float: none;
         padding: 4px 0px;
     }
-}        
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    nav li {
+        width: 48%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+
+    .right{
+        float: none;
+        width: 31%;
+    }
+
+    #container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    #container {
+        width: 768px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    #container {
+        width: 980px;
+    }
+}     
