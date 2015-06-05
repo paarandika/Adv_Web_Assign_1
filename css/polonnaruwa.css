@@ -125,6 +125,7 @@ aside {
     width: 100%;
     margin: 5px;
     margin-top: 15px;
+    border-radius: 5px;
 }
 
 .content_box section {
@@ -205,6 +206,33 @@ aside {
 
 .text p {
     text-align: justify;
+}
+
+#sidebar_content {
+    position: relative;
+    top: 50px;
+}
+
+#araliya {
+    float: left;
+    width: 100%;
+    display: block;
+    border-top: rgb(11, 11, 109) solid;
+}
+
+#araliya .land {
+    display: none;
+    width: 100%;
+}
+
+#araliya .port {
+    display: block;
+    width: 100%;
+}
+
+article.content_holder {
+    position: relative;
+  top: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -316,6 +344,14 @@ aside {
         width: 100%;
     }
 
+    #araliya .land {
+        display: block;
+    }
+
+    #araliya .port {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -367,6 +403,18 @@ aside {
     text-align:center; 
     }
 
+    #weather_inner {
+        width:50%
+    }
+
+    #araliya .land {
+        display: block;
+    }
+
+    #araliya .port {
+        display: none;
+    }
+
 
 }
 
@@ -384,4 +432,5 @@ aside {
         float: left;
         width: 70%;
     }
+
 }     

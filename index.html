@@ -26,7 +26,7 @@
 <nav >
 	<ul class="clearfix">
 		<li><a href="">Attractions</a></li>
-		<li id="padded"><a href="">My bucket-list</a></li>
+		<li id="padded"><a href="" class="{{isActive}}">My bucket-list</a></li>
 		<li class="right"><a href="">Home</a></li>
 		<li class="right"><a href="">Blog</a></li>
 		<li class="right"><a href="">Contact</a></li>
@@ -35,7 +35,7 @@
 </nav>
 <div id="container">
 	<div id="content" ng-view></div>
-	<aside ng-include src="sidebarURL"></aside>
+	<aside ng-include src="sidebarURL" onload="getWeather()"></aside>
 </div>
 </body>
 </html>

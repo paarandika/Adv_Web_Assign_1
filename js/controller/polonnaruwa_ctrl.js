@@ -95,4 +95,35 @@ function Ctrl ($scope) {
 		jssor_slider1.$Play();
 		});
 	}
+
+	$scope.getWeather=function () {
+
+		$.ajax({
+                url: 'http://api.openweathermap.org/data/2.5/weather?q=Ampara,lk',
+                timeout: 10000,
+                async: true,
+                success: function (obj) {
+                    var desc = obj.weather[0].description;
+                    var out = ""
+                    if (desc != undefined) {
+                        //                        alert(desc)
+                        out = "<div id='weather_inner' style='float:left'><h3> Weather now in Polonnaruwa : " + desc + "</h3></div><div style='float:left'><img src='img/" + obj.weather[0].icon + ".png'>";
+                    } else {
+                        out = "<h2>No data</h2><img src='img/na.png'>";
+
+                    }
+                    $("#weather").html(out);
+                },
+                error: function (x, t, m) {
+                    if (t === "timeout") {
+                        alert("got timeout");
+                        out = "<h2>No data</h2><img src='img/na.png'>";
+                    } else {
+                        alert(t + m);
+                        out = "<h2>No data</h2><img src='img/na.png'><p>";
+                    }
+                    $("#weather").html(out);
+                }
+            });
+	}
 }

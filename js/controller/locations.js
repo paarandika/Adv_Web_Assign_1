@@ -6,5 +6,5 @@ function locationCtrl ($scope, Location) {
             return true;
         }
         return false;
-  };
+  	};
 }
