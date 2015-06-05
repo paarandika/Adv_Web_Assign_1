@@ -171,7 +171,7 @@ aside {
     border: 1px solid #d1d1d1;
     color: #bebebe;
     width: 350px;
-    padding: 6px 15px 6px 35px;
+    padding: 6px 5px 6px 35px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 10px;
@@ -212,7 +212,6 @@ aside {
         display: block;
         padding: 0px;
         color: #0b0b6d;
-        box-shadow: none;
     }
     nav div {
         border-width: 2px;
@@ -255,7 +254,7 @@ aside {
 
     nav li {
         display: block;
-        width: 100%;
+        width: 99%;
         border-width: 2px;
         border-style: solid;
         border-color: #595966;
@@ -273,6 +272,10 @@ aside {
         display: inline-block;
     }
 
+    nav a:hover {
+        box-shadow: none;
+    }
+
     .right{
         float: none;
         padding: 4px 0px;
@@ -281,6 +284,8 @@ aside {
     .content_box{
         width: 99%;
         height: 120px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #search {
@@ -334,6 +339,8 @@ aside {
 
     .content_box{
         width: 99%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     aside {
