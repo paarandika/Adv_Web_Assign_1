@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="contents">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="css/polonnaruwa.css">
 
 	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/lib/jssor.js"></script>
     <script type="text/javascript" src="js/lib/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/polonnaruwa.js"></script> 
 	<script type="text/javascript" src="js/controller/polonnaruwa_ctrl.js"></script>
+	<script type="text/javascript" src="js/controller/locations.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
+	<script type="text/javascript" src="js/services.js"></script>
 </head>
 <body style="padding:0px; margin:0px;">
-	<div ng-app ng-controller="Ctrl">
+	<div ng-controller="Ctrl">
 		<div ng-include src="sliderURL" onload="slider()"></div>
 	</div>
 <header class='header-main'>Polonnaruwa</header>
@@ -27,7 +31,10 @@
 		<li class="right"><a href="">Contact</a></li>
 	</ul>
 	<div><div id="menu"><a href="#" id="pull">Menu</a></div></div>
-	
 </nav>
+<div id="container">
+	<div id="content" ng-view></div>
+	<aside>hfghfghfghfgh</aside>
+</div>
 </body>
 </html>

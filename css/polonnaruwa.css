@@ -214,10 +214,4 @@ aside {
     #container {
         width: 768px;
     }
-} 
-
-@media screen and (min-width: 1200px) {
-    #container {
-        width: 980px;
-    }
 }     
