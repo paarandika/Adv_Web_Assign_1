@@ -27,4 +27,8 @@ $(window).resize(function(){
     if(w > 749) {
     	$(".right").css({'float':'right'})
     }
+
+    $(".content_box").dotdotdot({
+        wrap: 'letter' 
+    });
 }); 

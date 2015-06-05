@@ -34,8 +34,11 @@
 .LArrow.LArrowdn { background-position: -243px -33px; }
 .RArrow.RArrowdn { background-position: -303px -33px; }
 
+body {
+    font-family: 'verdana';
+    background-image: url("../img/bg2.jpg");
+}
 .header-main{
-     font-family: 'verdana';
      font-size: 12vw;
      width: 100%;
      color: #0b0b6d;
@@ -66,7 +69,6 @@ nav a {
     border-color: #595966;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'verdana';
     vertical-align:middle; 
     text-indent: 10px;
     color: #0b0b6d;
@@ -74,6 +76,7 @@ nav a {
 
 a:hover {
     border-width: 3px;
+    box-shadow: 2px 2px 1px #888888;
 
 }
 
@@ -106,21 +109,110 @@ nav a#pull {
 aside {
     float: left;
     width: 20%;
-    background-color: blue;
 }
 
 #content {
     float: left;
     width: 80%;
-    background-color: red;
 }
 
+.thumb_box {
+        width: 40%;
+        float: left;
+}
+
+.thumb_box img{
+    width: 100%;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.content_box section {
+    width: 55%;
+    float: left;
+    padding-left: 10px;
+}
+
+.content_box section p{
+    text-align: justify;
+}
+
+.content_holder{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0b0b6d;
+    border-radius: 5px;
+    overflow:auto;
+    margin: 10px;
+    padding: 5px;
+    min-width: 210px;
+}
+
+.content_box{
+    float: left;
+    width: 48.5%;
+    height: 195px;
+    word-wrap: break-word;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px #888888;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    position: relative;
+}
+
+.content_box:hover{
+    box-shadow: 3px 3px 5px #5B5884;
+}
+
+#search {
+    background: url(../img/search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 350px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#search:focus {
+    width: 480px;
+}
+
+#search_box {
+    text-align:right; 
+    margin: 10px; 
+    padding-top: 10px;
+}
+
+.image {
+    width: 50%;
+    margin: 5px;
+    float: right;
+}
+
+.text p {
+    text-align: justify;
+}
 
 @media screen and (max-width: 480px) {
     nav a#pull {
         display: block;
         padding: 0px;
         color: #0b0b6d;
+        box-shadow: none;
     }
     nav div {
         border-width: 2px;
@@ -128,7 +220,8 @@ aside {
         border-color: #595966;
         border-radius: 5px;
         height: auto;
-        width: 100%;
+        width: 98%;
+        margin: auto;
     }
 
     nav div#menu{
@@ -184,6 +277,40 @@ aside {
         float: none;
         padding: 4px 0px;
     }
+
+    .content_box{
+        width: 99%;
+        height: 120px;
+    }
+
+    #search {
+        width: 88%;
+        margin:auto;
+        display: block;
+    }
+
+    #search:focus{
+        width: 88%
+    }
+
+    #search_box {
+    text-align:center; 
+    }
+
+    aside {
+    float: none;
+    width: 100%;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -205,13 +332,49 @@ aside {
         width: 31%;
     }
 
-    #container {
-        width: 480px;
+    .content_box{
+        width: 99%;
     }
+
+    aside {
+    float: none;
+    width: 100%;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    #search {
+        width: 88%;
+        margin:auto;
+        display: block;
+    }
+
+    #search:focus{
+        width: 88%
+    }
+
+    #search_box {
+    text-align:center; 
+    }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
-    #container {
-        width: 768px;
+    .content_box{
+        width: 99%;
+    }
+
+    aside {
+        float: left;
+        width: 30%;
+    }
+
+    #content {
+        float: left;
+        width: 70%;
     }
 }     

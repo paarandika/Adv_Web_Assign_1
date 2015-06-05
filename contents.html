@@ -1,4 +1,15 @@
-<div>
-<input type="text" class="input-small" placeholder="Origin" ng-model="query" />
-<li ng-repeat="location in locations | filter:search">{{location.name}}</li>
+<div id="search_box">
+<input id="search" type="text" class="input-small" placeholder="Search by name or description" ng-model="query" />
+</div>
+<div class="content_holder">
+	<div class="content_box" ng-repeat="location in locations | filter:search">
+	<a href="#/{{location.link}}" style="position: absolute; height:100%; width:100%"></a>
+		<article>
+			<section>
+				<h1>{{location.name}}</h1>
+				<p>{{location.abstract}}</p>
+			</section>
+			<div class="thumb_box"><img src="{{location.pic}}"></div>
+		</article>
+	</div>
 </div>
