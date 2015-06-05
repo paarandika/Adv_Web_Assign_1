@@ -17,8 +17,8 @@
 	<script type="text/javascript" src="js/routes.js"></script>
 	<script type="text/javascript" src="js/services.js"></script>
 </head>
-<body style="padding:0px; margin:0px;">
-	<div ng-controller="Ctrl">
+<body ng-controller="Ctrl" style="padding:0px; margin:0px;">
+	<div>
 		<div ng-include src="sliderURL" onload="slider()"></div>
 	</div>
 <header class='header-main'>Polonnaruwa</header>
@@ -34,7 +34,7 @@
 </nav>
 <div id="container">
 	<div id="content" ng-view></div>
-	<aside>hfghfghfghfgh</aside>
+	<aside ng-include src="sidebarURL"></aside>
 </div>
 </body>
 </html>

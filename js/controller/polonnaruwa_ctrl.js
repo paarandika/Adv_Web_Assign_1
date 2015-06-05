@@ -1,5 +1,6 @@
 function Ctrl ($scope) {
-	$scope.sliderURL ='slider.html'
+	$scope.sliderURL ='slider.html';
+	$scope.sidebarURL='sidebar.html';
 	
 	$scope.slider=function (){
 
