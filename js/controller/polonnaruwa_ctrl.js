@@ -126,4 +126,10 @@ function Ctrl ($scope) {
                 }
             });
 	}
+
+	$scope.setActive=function (link) {
+		$scope.attractions="";
+		$scope.bucket=""
+		$scope[link]="active"
+	}
 }

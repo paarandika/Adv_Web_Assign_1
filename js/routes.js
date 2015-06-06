@@ -10,5 +10,6 @@ function contentRouter($routeProvider) {
 		.when('/satmahal_prasada', {templateUrl: 'satmahal_prasada.html', controller: 'locationCtrl'})
 		.when('/vatadage', {templateUrl: 'vatadage.html', controller: 'locationCtrl'})
 		.when('/royal_palace', {templateUrl: 'royal_palace.html', controller: 'locationCtrl'})
-		.when('/thuparama_gedige', {templateUrl: 'thuparama_gedige.html', controller: 'locationCtrl'});
+		.when('/thuparama_gedige', {templateUrl: 'thuparama_gedige.html', controller: 'locationCtrl'})
+		.when('/bucket', {templateUrl: 'bucket.html', controller: 'bucketCtrl'});
 }

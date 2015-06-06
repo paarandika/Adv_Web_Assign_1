@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/polonnaruwa.js"></script> 
 	<script type="text/javascript" src="js/controller/polonnaruwa_ctrl.js"></script>
 	<script type="text/javascript" src="js/controller/locations.js"></script>
+	<script type="text/javascript" src="js/controller/bucket.js"></script>
 	<script type="text/javascript" src="js/routes.js"></script>
 	<script type="text/javascript" src="js/services.js"></script>
 </head>
@@ -25,8 +26,8 @@
 <header class='header-main'>Polonnaruwa</header>
 <nav >
 	<ul class="clearfix">
-		<li><a href="">Attractions</a></li>
-		<li id="padded"><a href="" class="{{isActive}}">My bucket-list</a></li>
+		<li class="{{attractions}}"><a href="#" class="{{attractions}}">Attractions</a></li>
+		<li id="padded"  class="{{bucket}}"><a onclick="checkVisited()" href="#bucket" class="{{bucket}}">My bucket-list</a></li>
 		<li class="right"><a href="">Home</a></li>
 		<li class="right"><a href="">Blog</a></li>
 		<li class="right"><a href="">Contact</a></li>

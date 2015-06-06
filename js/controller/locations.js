@@ -7,4 +7,6 @@ function locationCtrl ($scope, Location) {
         }
         return false;
   	};
+
+  	$scope.setActive('attractions');
 }

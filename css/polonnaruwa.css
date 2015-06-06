@@ -230,9 +230,30 @@ aside {
     width: 100%;
 }
 
-article.content_holder {
+article.content_holder, #bucket_content {
     position: relative;
-  top: 50px;
+    top: 50px;
+}
+
+a.active {
+    color: white;
+    background-color: #0b0b6d;
+    border-color: #0b0b6d;
+}
+
+a.active:hover {
+    box-shadow: none;
+    border-width: 2px;
+}
+
+div.bucket {
+    height: 100px;
+}
+
+.bucket img {
+    margin-top: 5px;
+    height: 90px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -350,6 +371,17 @@ article.content_holder {
 
     #araliya .port {
         display: none;
+    }
+
+    a.active {
+        color: white;
+        background-color: transparent;
+    }
+
+    l.active {
+        color: white;
+        background-color: #0b0b6d;
+        border-color: #0b0b6d;
     }
 
 }

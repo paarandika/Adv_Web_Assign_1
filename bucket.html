@@ -1,0 +1,14 @@
+</div>
+<div class="content_holder" id="bucket_content">
+	<div class="content_box bucket"  ng-repeat="location in locations" onclick="setVisited('{{location.link}}')">
+	<div id="{{location.link}}" style="position: absolute; height:100%; width:100%; z-index:3; display:none; text-align: center;
+  background-color: rgb(129, 136, 137);
+  opacity: 0.4;"> <img src="img/visited.png"></div>
+		<article>
+			<section>
+				<h1>{{location.name}}</h1>
+			</section>
+			<div class="thumb_box bucket"><img src="{{location.pic}}"></div>
+		</article>
+	</div>
+</div>
